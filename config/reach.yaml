@@ -1,0 +1,33 @@
+environment:
+  seed: 0
+  env_id: "Reach"
+  obs_keys: ["robot0_eef_pos", "robot0_eef_quat", "robot0_gripper_qpos", "object-state"]
+  checkpoint_folder: "/home/joe/ooa/bc_trained_models/reach_policy_n01/20240623202814"
+  checkpoint: "model_epoch_250_Reach_success_0.82.pth"
+  controller: "OSC_POSE"
+  robosuite:
+    robots: "Panda"
+    has_renderer: False
+    has_offscreen_renderer: False
+    use_object_obs: True
+    use_camera_obs: False
+    control_freq: 20
+    reward_shaping: False
+    horizon: 400
+    controller_configs:
+      control_delta: True
+      damping: 1
+      damping_limits: [0, 10]
+      impedance_mode: "fixed"
+      input_max: 1
+      input_min: -1
+      interpolation: null
+      kp: 150
+      kp_limits: [0, 300]
+      orientation_limits: null
+      output_max: [0.05, 0.05, 0.05, 0.5, 0.5, 0.5]
+      output_min: [-0.05, -0.05, -0.05, -0.5, -0.5, -0.5]
+      position_limits: null
+      ramp_ratio: 0.2
+      type: "OSC_POSE"
+      uncouple_pos_ori: true
