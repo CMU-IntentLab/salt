@@ -1,0 +1,9 @@
+[submodule "robomimic"]
+	path = robomimic
+	url = git@github.com:hyunjjoe/robomimic.git
+[submodule "robosuite"]
+	path = robosuite
+	url = git@github.com:hyunjjoe/robosuite.git
+[submodule "safety_rl"]
+	path = safety_rl
+	url = git@github.com:hyunjjoe/safety_rl.git
