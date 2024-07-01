@@ -1,5 +1,6 @@
 environment:
   seed: 0
+  render_offscreen: False
   env_id: "Reach"
   obs_keys: ["robot0_eef_pos", "robot0_eef_quat", "robot0_gripper_qpos", "object-state"]
   checkpoint_folder: "/home/joe/Documents/safealts/robomimic/bc_trained_models/diff_ic_diff_goal/traj200"
