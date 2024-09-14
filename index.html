@@ -163,11 +163,11 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Open Loop vs. Closed Loop Monitoring</h2>
+        <h2 class="title is-3">Baseline Comparison: Open Loop vs. Closed Loop Monitoring</h2>
         <p>
           We use an Ensemble of behavior cloned policies as an open loop monitor: high ensemble disagreement is a measure of uncertainty in the robot’s action prediction. If the disagreement exceeds a threshold, then the robot stops and asks for help.
         </p>
-        <img src="static/images/loops.png" alt="MY ALT TEXT"/>
+        <img src="static/images/loops.png" alt="MY ALT TEXT" class="mt-4 mb-4"/>
         <p>
           The above figure shows an example of this pessimism, wherein the ensemble asks for help for a person mid-execution even though the robot was capable of doing the task safely. In contrast, ours checks pre-execution if the closed-loop behavior is predicted to be safe and life, and then no longer requires human supervision during execution.
         </p>
