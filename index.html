@@ -147,19 +147,18 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
-          <img src="static/images/framework.png" alt="MY ALT TEXT"/>
-          <p>
-            Offline, a reach-avoid value network is
-learned to estimate the safety and liveness properties of a pre-trained goal-conditioned robot policy. Online, a human
-inputs a desired goal, which is first monitored by our reach-avoid value function. If the input goal satisfies both safety and
-liveness, then the policy is executed. Otherwise, the robot solves a safe control problem over alternative goals (e.g., objects
-in the scene) to propose an alternative. If the human accepts, then the robot confidently executes on the new goal.
-          </p>
-        </div>
+        <p>
+          We want robots to know when they can safely execute a user's given goal and propose safe alternatives when they cannot. Our key idea is to formalize alternative suggestion as a safe control problem in goal space. By solving a goal-parameterized reachability problem <b>offline</b>, we obtain a reach-avoid value function that the robot can use <b>online</b> to find safe but similar goals to the original one the person proposed. We call our overall framework for robots that suggest <b>S</b>afe <b>ALT</b>ernativess
+        </p>
+        <img src="static/images/framework.png" alt="MY ALT TEXT"/>
+        <p>
+          Offline, a reach-avoid value network is learned to estimate the safety and liveness properties of a pre-trained goal-conditioned robot policy. Online, a human inputs a desired goal, which is first monitored by our reach-avoid value function. If the input goal satisfies both safety and liveness, then the policy is executed. Otherwise, the robot solves a safe control problem over alternative goals (e.g., objects in the scene) to propose an alternative. If the human accepts, then the robot confidently executes on the new goal.
+        </p>
       </div>
     </div>
   </div>
 </section>
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
