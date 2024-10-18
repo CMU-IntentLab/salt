@@ -7,7 +7,7 @@ Make sure to install RARL first to avoid dependency issues!
 ## Navigation
 
 # Run Training
-''' Python
+'''
 python safety_rl/sim_dubins_policy.py -w -wi 50000 -a -sf -n "anneal_9999"
 '''
 
