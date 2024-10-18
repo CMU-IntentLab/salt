@@ -1,0 +1,1 @@
+robosuite/models/assets/demonstrations/merged_demos/3merge300traj.hdf5 filter=lfs diff=lfs merge=lfs -text
